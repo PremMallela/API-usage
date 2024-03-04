@@ -17,9 +17,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/recipe", (req, res) => { 
-    switch (req.body.choice){
+    switch (req.body.choice){           //Lines 20 - 39 decides what to serve and act like an API here(custom API with No third parties/services)
         case "chicken" :{
-            data = JSON.parse(recipeJSON)[0]
+            data = JSON.parse(recipeJSON)[0]   
             break;
         }
         case "beef" :{
